@@ -1,14 +1,19 @@
 {
   "name": "purescript-halogen-utils",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "output"
   ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/JordanMartinez/purescript-halogen-utils.git"
+  },
   "dependencies": {
     "purescript-prelude": "^4.1.1",
-    "purescript-halogen": "v5.0.0-rc.7"
+    "purescript-halogen": "^5.0.0-rc.7"
   },
   "devDependencies": {
     "purescript-psci-support": "^4.0.0"
