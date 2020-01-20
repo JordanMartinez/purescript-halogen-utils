@@ -5,7 +5,8 @@ import Data.Unit (Unit, unit)
 import Halogen.HTML as HH
 
 -- | Renders an element using the function in the case of `Just`. Otherwise,
--- | render `HH.text ""` which is as cloes to `Monoid`'s `mempty` as we can get.
+-- | renders `HH.text ""`, which is as close to `Monoid`'s `mempty` as
+-- | we can get.
 maybeElem :: forall p i a. Maybe a -> (a -> HH.HTML p i) -> HH.HTML p i
 maybeElem (Just x) f = f x
 maybeElem _ _ = HH.text ""
